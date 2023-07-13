@@ -1,0 +1,116 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* font: inherit; */
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  background-color: #f5f5f5;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500px;
+  background-color: #f5f5f5;
+}
+.tour-list-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+.tour-list {
+  display: flex;
+  margin-left: -30px;
+  /* flex-direction: row; row-revese là ngược lại*/
+  /* align-items: stretch; giá trị mặc định là stretch */
+  /*stretch là các phần tử cao bằng nhau */
+  /* align-items: flex-start; căn các phần tử lên phía đỉnh */
+  /* align-items: flex-end; căn các phần tử lên phía đáy */
+  /* align-items: center; căn các phần tử ở giữa khối */
+  /* align-items: baseline; căn các phần tử theo đáy dòng chữ đầu tiên của các phần tử   */
+  /* flex-wrap: nowrap; không cho phần tử xuống hàng mặc dù tổng các phần tử rộng hơn max width */
+  /* flex-wrap: wrap; cho phần tử xuống hàng  */
+}
+.tour-review {
+  display: flex;
+}
+.tour {
+  /* width: calc(33.33% - 30px); */
+  width: 33.33%;
+  /* width trừ 30px mỗi tour để vừa với max width*/
+  /* height: 420px; */
+  height: auto;
+  /* padding: 40px; */
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+  /* children bị tràn ra ngoài sẽ bị cut đi*/
+  background-color: white;
+  margin-left: 30px;
+}
+.tour-content {
+  padding: 20px 20px 14px 20px;
+}
+.tour-title {
+  color: #23262f;
+  margin-bottom: 10px;
+  font-style: 18px;
+  line-height: 1.556; /*28/18**/
+}
+
+.tour-rating {
+  margin-bottom: 20px;
+}
+.tour-view-count {
+  color: #3b3e44;
+}
+.tour-duration {
+  color: #353945;
+}
+.tour-button {
+  font-size: 14px;
+  font-weight: 500px;
+  color: white;
+  padding: 8px 16px;
+  background-color: #3b71fe;
+  border-radius: 8px;
+  text-decoration: none;
+  line-height: 17px;
+  display: inline-block;
+}
+.tour-rating {
+  display: flex;
+}
+.tour-image {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  object-fit: cover;
+  height: 239px;
+  /* cho ảnh phủ hết width*/
+}

@@ -1,0 +1,78 @@
+- _div_ là thẻ block có độ rộng 100% phần tử chứa nó,lưu ý chưa nói tới vấn đề khi sử dụng CSS
+- _div_ thường được dùng rất nhiều khi chia layout, gom 1 khối nào đó
+
+- _img_ là thẻ inline , tự đóng dùng để hiển thị hình ảnh với 2 thuộc tính là src và alt
+
+- _alt_ là alternate text nó dùng trong việc CEO, khi hình ảnh bị lỗi hoặc sai đường dẫn thì alt sẽ hiển thị
+- _span_ là thẻ inline nó thường được dùng cho những đoạn chữ ngắn
+- _class_ là thuộc tính dùng để sử dụng các class cho thẻ , sau đó dùng để styles cho CSS
+
+- việc đặt tên class khá là nan giải,không nên đặt tên tiếng việt ,nên đặt tên tiếng anh dễ hiểu
+
+-Thẻ tiêu đề : h1,h2,h3,h4,h5,h6
+
+- _h1_
+  Mỗi trang chỉ có tối đa 1 thẻ h1 thôi, thẻ này dùng cho những tiêu đề lớn của trang
+
+- _h2_:thường được dùng nhiều dùng cho những block to
+- _h3_ :DÙng được nhiều , thường được dùng cho những block nhỏ
+
+- _a_ : là thẻ inline chắc chắn là dùng cho liên kết nó có 3 thuộc tính hay dùng href ,target,rel
+
+-khi dùng target có gì trị \_bank thì thẻ a nên thêm thuộc tính rel="noopener noreferrer"
+
+- _font-weigth_: độ đậm nhạt của chữ 100-900 ,normal,bold,bolder,extra bold,thin ,regular,medium,semibold
+- _font-family_: thiết lập font chữ, truyền vào là font name( tên của font chữ)
+- CSS Selectors:tag,class,id, attribute
+- tags:h1,h2,div,img,..
+- class:.name,.container
+- id :#root,#id,..
+- attribute: later \*
+- cấu trúc 1 đoạn CSS
+  cssSelector,cssSelector,cssSelector{
+  propertity:value
+  }
+- CSS reset
+- san-serif: là chữ có chân
+- serif : là chữ có chân
+
+- _box-shizing_ :margin,padding,border,width,height,đơn vị px
+- _color_: màu chữ
+- _back-ground-color_: màu nền
+  mã màu hexa #ccc,oragen,rgb(0,0,0),
+  rgba(0,0,0,0.5) ,alpha:0->1
+
+- **box-sizing**
+- _content-box_:Độ rộng lúc này của 1 khối sẽ bằng width + padding(l+r) +border(l+r)
+- _border-box_:Độ rộng lúc này của 1 khối sẽ bao gồm padding và border, nên áp dụng cho toàn bộ selector
+- _padding_:có thể dùng số âm
+- _margin_: có thể dùng số âm, có giá trị auto
+- _width_: độ rộng
+- _height_ : chiều cao
+- _border_:viền
+- _shorthand_ :viết rút gọn
+- Đơn vị : px,em,rem,vw,vh,%
+- khi set width và height cố định thì box sizing sẽ bao gồm cả padding và margin, không set thì nó sẽ cộng thêm dài ra với nội dung bên trong
+
+- _text-decoration_:gạch dưới của thẻ a,`none`,`underline`,`overline`,`line-through`
+- _border-radius_ : độ bo góc của khối , càng lớn thì càng bo góc, nếu hình vuông mà có bo góc thì -> hình tròn, nếu chữ nhật có bo góc lớp thì -> elipse
+  top-left top-right bot-left bot-rigth
+- _line-height_:khoảng cách giữa các dòng chữ
+
+- khi những thẻ inline nằm cạnh nhau sẽ nằm trên 1 hàng ngược lại những thẻ block sẽ tạo ra hàng mới
+
+- _display_:block,inline, inline-block,
+  none,flex,grid
+
+- `block` :Biến thành thẻ block
+- `inline` :Biến thành thẻ inline, bị hạn chế CSS box-sizing, padding top bottom, margin bottom
+- `inline-block` :Biến thành thẻ có thuộc tính inline và block luôn -> nằm trên 1 hàng độ rộng bằng nội dung nó chứa, không bị hạn chế CSS
+
+- `flex`:
+- `none`:không thấy không hành động được
+- _min-width_:độ rộng tối thiểu -> >=
+- _max-width_:độ rộng tối đa -> <=
+- _flex-box_:Áp dụng thuộc tính display flexx vào phần tử mình muốn dàn layout
+- _calculate_: hàm để tính toán , lưu ý là phải có khoảng cách giữa các phép tính
+
+- _component_ : mục đích tái sử dụng , có thể sử dụng ở nhiều nơi
