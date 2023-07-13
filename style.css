@@ -39,53 +39,57 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500px;
   background-color: #f5f5f5;
+  padding: 20px 0px;
 }
 .tour-list-container {
   max-width: 1170px;
-  width: 100%;
   margin: 0 auto;
 }
 .tour-list {
+  width: 100%;
   display: flex;
-  margin-left: -30px;
-  /* flex-direction: row; row-revese là ngược lại*/
-  /* align-items: stretch; giá trị mặc định là stretch */
-  /*stretch là các phần tử cao bằng nhau */
-  /* align-items: flex-start; căn các phần tử lên phía đỉnh */
-  /* align-items: flex-end; căn các phần tử lên phía đáy */
-  /* align-items: center; căn các phần tử ở giữa khối */
-  /* align-items: baseline; căn các phần tử theo đáy dòng chữ đầu tiên của các phần tử   */
-  /* flex-wrap: nowrap; không cho phần tử xuống hàng mặc dù tổng các phần tử rộng hơn max width */
-  /* flex-wrap: wrap; cho phần tử xuống hàng  */
+  /* margin-left: -30px; */
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .tour-review {
   display: flex;
+  column-gap: 11px;
 }
 .tour {
-  /* width: calc(33.33% - 30px); */
-  width: 33.33%;
+  width: calc(33% - 20px);
+  /* width: calc(33% - 30px); */
+  /* margin-left: 30px; */
+  /* margin-bottom: 30px; */
   /* width trừ 30px mỗi tour để vừa với max width*/
-  /* height: 420px; */
   height: auto;
-  /* padding: 40px; */
-  /* border-radius: 10px; */
-  /* overflow: hidden; */
-  /* children bị tràn ra ngoài sẽ bị cut đi*/
   background-color: white;
-  margin-left: 30px;
+  word-break: break-word;
 }
 .tour-content {
   padding: 20px 20px 14px 20px;
 }
 .tour-title {
   color: #23262f;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-style: 18px;
   line-height: 1.556; /*28/18**/
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .tour-rating {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .tour-view-count {
   color: #3b3e44;
@@ -109,8 +113,8 @@ body {
 }
 .tour-image {
   border-radius: 10px 10px 0px 0px;
+  height: 239px;
   width: 100%;
   object-fit: cover;
-  height: 239px;
   /* cho ảnh phủ hết width*/
 }

@@ -9,13 +9,13 @@
 
 - việc đặt tên class khá là nan giải,không nên đặt tên tiếng việt ,nên đặt tên tiếng anh dễ hiểu
 
--Thẻ tiêu đề : h1,h2,h3,h4,h5,h6
+- _Thẻ tiêu đề_ : h1,h2,h3,h4,h5,h6
 
 - _h1_
   Mỗi trang chỉ có tối đa 1 thẻ h1 thôi, thẻ này dùng cho những tiêu đề lớn của trang
 
 - _h2_:thường được dùng nhiều dùng cho những block to
-- _h3_ :DÙng được nhiều , thường được dùng cho những block nhỏ
+- _h3_ :Dùng được nhiều , thường được dùng cho những block nhỏ
 
 - _a_ : là thẻ inline chắc chắn là dùng cho liên kết nó có 3 thuộc tính hay dùng href ,target,rel
 
@@ -23,18 +23,18 @@
 
 - _font-weigth_: độ đậm nhạt của chữ 100-900 ,normal,bold,bolder,extra bold,thin ,regular,medium,semibold
 - _font-family_: thiết lập font chữ, truyền vào là font name( tên của font chữ)
-- CSS Selectors:tag,class,id, attribute
-- tags:h1,h2,div,img,..
-- class:.name,.container
-- id :#root,#id,..
-- attribute: later \*
+- _CSS Selectors_:tag,class,id, attribute
+- _tags_:h1,h2,div,img,..
+- _class_:.name,.container
+- _id_ :#root,#id,..
+- _attribute_: later \*
 - cấu trúc 1 đoạn CSS
   cssSelector,cssSelector,cssSelector{
   propertity:value
   }
-- CSS reset
-- san-serif: là chữ có chân
-- serif : là chữ có chân
+- _CSS reset_
+- _san-serif_: là chữ có chân
+- _serif_ : là chữ có chân
 
 - _box-shizing_ :margin,padding,border,width,height,đơn vị px
 - _color_: màu chữ
@@ -73,6 +73,28 @@
 - _min-width_:độ rộng tối thiểu -> >=
 - _max-width_:độ rộng tối đa -> <=
 - _flex-box_:Áp dụng thuộc tính display flexx vào phần tử mình muốn dàn layout
-- _calculate_: hàm để tính toán , lưu ý là phải có khoảng cách giữa các phép tính
-
+- _calc_: hàm để tính toán , lưu ý là phải có khoảng cách giữa các phép tính
+- _flex-direction_: row; row-revese là ngược lại
+- _align-items_: stretch; giá trị mặc định là stretch
+- _stretch_ là các phần tử cao bằng nhau
+- _align-items_: flex-start; căn các phần tử lên phía đỉnh
+- _align-items_: flex-end; căn các phần tử lên phía đáy
+- _align-items_: center; căn các phần tử ở giữa khối
+- _align-items_: baseline; căn các phần tử theo đáy dòng chữ đầu tiên của các phần tử
+- _flex-wrap_: nowrap; không cho phần tử xuống hàng mặc dù tổng các phần tử rộng hơn max width
+- _flex-wrap_: wrap; cho phần tử xuống hàng
+- _overflow_: hidden ;children bị tràn ra ngoài sẽ bị cut đi
+- _object-fit_: cover; cho ảnh phủ hết width
+- _justify-content: flex-start;_ giá trị mặc định là flex start là dồn các phần tử về bên trái :`center`,`space-beetween`,`space-around`,`space-evenly`
+- _column-gap_:khoảng trống theo chiều dọc
+- _row-gap_:khoảng trống theo chiều ngang
+- _word-break_: break-word; nếu mà bị tràn chữ thì nó tự xuống dòng theo ý nghĩa chữ `break-all`
+- _white-space_: nowrap; không cho chữ rơi xuống hàng
+- _overflow_: hidden;
+  _text-overflow_: ellipsis; ẩn phần bị tràn đi và có dấu ...
+- snippit : text-truncate: text dài quá thì muốn 2 hoặc 3 hàng mới có dấu ...
 - _component_ : mục đích tái sử dụng , có thể sử dụng ở nhiều nơi
+- _position_:
+- _pug_:
+- _sass_:
+- _javascript_:
