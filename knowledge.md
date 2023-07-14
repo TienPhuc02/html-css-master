@@ -94,7 +94,8 @@
   _text-overflow_: ellipsis; ẩn phần bị tràn đi và có dấu ...
 - snippit : text-truncate: text dài quá thì muốn 2 hoặc 3 hàng mới có dấu ...
 - _component_ : mục đích tái sử dụng , có thể sử dụng ở nhiều nơi
-- _position_:
-- _pug_:
+- _position_:có 5 giá trị chính:`static`,`relative`,`absolute`,`sticky`,`fixed`,khi sử dụng thuộc tính position thì đi kèm các thuộc tính khác như:top,right,bottom,left,z-index
+- _relative_:khi sử dụng giá trị này thì phải lưu ý xem phần tử con của nó có sử dụng position là `absolute` không
+- _absolute_:khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó có sử dùng posion là `absolute` hay `relative` không
 - _sass_:
 - _javascript_:

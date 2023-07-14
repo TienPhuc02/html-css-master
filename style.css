@@ -66,6 +66,21 @@ body {
   background-color: white;
   word-break: break-word;
 }
+.tour-top {
+  position: relative;
+}
+.tour-price {
+  position: absolute;
+  border-radius: 4px;
+  top: 24px;
+  left: 30px;
+  padding: 5px 16px;
+  background-color: rgba(53, 57, 69, 0.8);
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-style: 12px;
+  color: #fcfcfd;
+}
 .tour-content {
   padding: 20px 20px 14px 20px;
 }
