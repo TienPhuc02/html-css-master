@@ -39,7 +39,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 500px;
   background-color: #f5f5f5;
-  padding: 20px 0px;
+  padding: 40px 24px;
 }
 .tour-list-container {
   max-width: 1170px;
@@ -132,4 +132,44 @@ body {
   width: 100%;
   object-fit: cover;
   /* cho ảnh phủ hết width*/
+}
+/**
+@media screen and (min-width:breakpoints){}
+@media screen and (min-width:320px){
+  áp dụng cho những màn hình có độ rộng 320px trở lên
+}
+@media screen and (max-width:breakpoints-1px){}
+@media screen and (max-width:breakpoints-0.2px){}
+@media screen and (max-width:1024px-0.2px){
+  áp dụng cho những màn hình có độ rộng 1023.98px trở xuống
+}
+@media screen and (max-width:breakpoints-0.2px) and (min-width:breakpoints){}
+@media screen and (max-width:1024px-0.2px) and (min-width:768){}
+*/
+@media screen and (max-width: 767.98px) {
+  .tour-list {
+    row-gap: 20px;
+  }
+  .tour {
+    width: 100%;
+  }
+  .tour-content {
+    padding: 17px 17px 9px;
+  }
+  .tour-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .tour-image {
+    height: 211px;
+  }
+  .tour-button,
+  .tour-rating {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1023.98px) and (min-width: 768) {
+  .tour {
+    width: calc(50%-20px);
+  }
 }

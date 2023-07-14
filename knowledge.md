@@ -97,5 +97,19 @@
 - _position_:có 5 giá trị chính:`static`,`relative`,`absolute`,`sticky`,`fixed`,khi sử dụng thuộc tính position thì đi kèm các thuộc tính khác như:top,right,bottom,left,z-index
 - _relative_:khi sử dụng giá trị này thì phải lưu ý xem phần tử con của nó có sử dụng position là `absolute` không
 - _absolute_:khi sử dụng giá trị này thì phải lưu ý xem phần tử chứa nó có sử dùng posion là `absolute` hay `relative` không
-- _sass_:
-- _javascript_:
+- _resposive_:
+- _breakpoints_: 320px 480px 768px 1024px 1200px 1366px 1440px 1600px 1920px
+- _min-width_:
+- _media queries_:
+
+- @media screen and (min-width:breakpoints){}
+- @media screen and (min-width:320px){
+  áp dụng cho những màn hình có độ rộng 320px trở lên
+  }
+- @media screen and (max-width:breakpoints-1px){}
+- @media screen and (max-width:breakpoints-0.2px){}
+- @media screen and (max-width:1024px-0.2px){
+  áp dụng cho những màn hình có độ rộng 1023.98px trở xuống
+  }
+- @media screen and (max-width:breakpoints-0.2px) and (min-width:breakpoints){}
+  @media screen and (max-width:1024px-0.2px) and (min-width:768){}
