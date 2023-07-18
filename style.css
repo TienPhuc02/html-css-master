@@ -45,12 +45,13 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
-.tour-list {
+.tour-list-card {
   width: 100%;
   display: flex;
   /* margin-left: -30px; */
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 70px;
 }
 .tour-review {
   display: flex;
@@ -65,6 +66,7 @@ body {
   height: auto;
   background-color: white;
   word-break: break-word;
+  border-radius: 10px;
 }
 .tour-top {
   position: relative;
@@ -83,6 +85,11 @@ body {
 }
 .tour-content {
   padding: 20px 20px 14px 20px;
+}
+.list-popular {
+  width: 100%;
+  display: flex;
+  gap: 30px;
 }
 .tour-title {
   color: #23262f;
@@ -147,7 +154,7 @@ body {
 @media screen and (max-width:1024px-0.2px) and (min-width:768){}
 */
 @media screen and (max-width: 767.98px) {
-  .tour-list {
+  .tour-list-card {
     row-gap: 20px;
   }
   .tour {
@@ -171,5 +178,88 @@ body {
 @media screen and (max-width: 1023.98px) and (min-width: 768) {
   .tour {
     width: calc(50%-20px);
+  }
+}
+.tour-list-popular {
+  width: 100%;
+}
+.popular {
+  width: 25%;
+  border-radius: 14px;
+}
+.tour-list-popular h1 {
+  margin-bottom: 30px;
+}
+.popular-top {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+}
+.populer-img img {
+  /* width: 100%; */
+  object-fit: cover;
+}
+.popular-button {
+  background-color: white;
+}
+.popular-button button {
+  background-color: #3b71fe;
+  padding: 5px 18px;
+  color: white;
+  border-radius: 30px;
+  width: 90px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.popular-content-container {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.popular-content {
+  max-width: 173px;
+  max-height: 78px;
+  padding-left: 20px;
+}
+.popular-content-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.title-time {
+  color: #777e90;
+  font-weight: 400;
+  font-size: 9px;
+  margin-bottom: 8px;
+}
+.title-place {
+  font-weight: 500;
+  color: gray/2;
+  font-size: 18px;
+}
+.popular-content-review {
+  display: flex;
+}
+.popular-content-review img {
+  margin-right: 10px;
+}
+.popular-content-review span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+@media screen and (max-width: 767.98px) {
+  .list-popular {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .popular {
+    width: 100%;
   }
 }
