@@ -1,3 +1,5 @@
+:root {
+}
 *,
 *:before,
 *:after {
@@ -263,3 +265,7 @@ body {
     width: 100%;
   }
 }
+
+/** 
+variable:
+*/

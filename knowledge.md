@@ -113,3 +113,16 @@
   }
 - @media screen and (max-width:breakpoints-0.2px) and (min-width:breakpoints){}
   @media screen and (max-width:1024px-0.2px) and (min-width:768){}
+
+- _variable_ : là gì? khai báo như nào? cách sử dụng ra sao? ưu nhược điểm của nó là gì
+- _khai báo_:
+  :root{
+  --primary-color:
+  --secondary-color:
+  --text-color:
+  --font-size-sm:
+  }
+  _sử dụng_:var(--primary-color)
+  --primary-color:#ccc;
+  color:--primary-color
+- ưu tiên biến được khai báo gần nhất
