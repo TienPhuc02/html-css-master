@@ -126,3 +126,18 @@
   --primary-color:#ccc;
   color:--primary-color
 - ưu tiên biến được khai báo gần nhất
+
+- _CSS Grid_:track-line:
+- _object-fit_:thuộc tính dành cho thẻ img hoặc video, dùng để hiển thị hoặc video vừa với khung chứa nó
+- _object-fill_:dùng để căn chỉnh vị trí hiển thị của img hoặc video khi dùng với thuộc tính
+- _object-position_:
+- _grid-template-columns_: repeat(4,1fr)
+- _grid-auto-flow_: column; cái này nó không cho xuống hàng auto hiểu là làm hàng dọc
+- _grid-columns_:1/3 chiếm từ cột 1 đến cột 3
+- _grid-columns_:3/-1 chiếm từ cột 3 đến cột 4(-1 cũng có nghĩa là ở cuối)
+- _grid-rows_:1/3 chiếm từ hàng 1 đến hàng 3
+
+- _css selectors child_:
+  :nth-child(number), :nth-last-child(number),:first-child,:last-child, những phần tử cùng hàng cùng cấp,
+
+VD:.gem-item:first-child,.gem-item:nth-child(5)

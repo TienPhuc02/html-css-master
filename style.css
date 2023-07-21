@@ -88,11 +88,6 @@ body {
 .tour-content {
   padding: 20px 20px 14px 20px;
 }
-.list-popular {
-  width: 100%;
-  display: flex;
-  gap: 30px;
-}
 .tour-title {
   color: #23262f;
   margin-bottom: 20px;
@@ -186,21 +181,40 @@ body {
   width: 100%;
 }
 .popular {
-  width: 25%;
+  width: 100%;
   border-radius: 14px;
 }
 .tour-list-popular h1 {
   margin-bottom: 30px;
 }
+.list-popular {
+  display: grid;
+  /*track-line:*/
+  /* grid-template-columns: value value value n-value; */
+  /* grid-template-columns: 270px 270px 270px 270px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr); */
+  /* grid-auto-flow: column; cái này nó không cho xuống hàng auto hiểu là làm hàng dọc */
+  grid-auto-flow: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  /* 1fr=fraction unit nó tự tính toán khi có gap  dỡ bị vỡ layout*/
+}
+/* .list-popular {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+} */
 .popular-top {
   width: 100%;
   background-color: white;
   position: relative;
   border-radius: 10px 10px 0px 0px;
 }
-.populer-img img {
-  /* width: 100%; */
+.popular-img img {
   object-fit: cover;
+  border-radius: 14px;
 }
 .popular-button {
   background-color: white;
@@ -226,7 +240,6 @@ body {
 }
 .popular-content {
   max-width: 173px;
-  max-height: 78px;
   padding-left: 20px;
 }
 .popular-content-title {
