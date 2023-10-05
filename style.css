@@ -282,23 +282,40 @@ body {
 /** 
 variable:
 */
-.tour-list-gem{
+.tour-list-gem {
   display: grid;
   margin-top: 20px;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 300px 150px;
   gap: 20px;
+  margin-bottom: 70px;
 }
-.gem:nth-child(1){
+.gem:nth-child(1) {
   grid-column: 1/3;
-  grid-row:1/3 ;
+  grid-row: 1/3;
 }
-.gem:last-child{
+.gem:last-child {
   grid-column: 2/4;
 }
-.gem img{
+.gem img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/**
+css hidden gem
+*/
+
+.tour-list-hidden-gem {
+  max-width: 1440px;
+  max-height: 680px;
+  padding: 65px 0px;
+}
+.hidden-gem-content {
+  max-width: 1000px;
+  max-height: 550px;
+  text-align: center;
+  margin: 0px auto;
 }
